@@ -1,0 +1,30 @@
+.header {
+  &-secondary {
+    display: grid;
+    grid-template-areas: 'title connect';
+    padding: 20px;
+  }
+
+  &-title {
+    grid-area: title;
+    font-family: 'Baskervvile', 'sans-serif';
+    justify-self: start;
+    align-self: center;
+    text-transform: uppercase;
+    margin-left: 18px;
+    font-weight: 500;
+    size: 19px;
+  }
+
+  &-connect {
+    ul {
+      grid-area: connect;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      font-size: 22px;
+    }
+  }
+}
